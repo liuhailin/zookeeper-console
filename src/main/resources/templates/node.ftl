@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Console</title>
-		<link rel="shortcut icon" href="${host}/favicon.ico">
+		<link rel="shortcut icon" href="${host}/img/favicon.ico">
 		<script src="${host}/js/jquery.min.js" type="text/javascript"></script>
 		<script src="${host}/js/bootstrap.min.js" type="text/javascript"></script>
 		<link href="${host}/css/bootstrap.min.css" rel="stylesheet" type="text/css">
