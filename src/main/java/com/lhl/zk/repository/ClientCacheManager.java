@@ -20,11 +20,10 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 public class ClientCacheManager {
 	private static final Logger log = LoggerFactory.getLogger(ClientCacheManager.class);
 	private static final int WAITING_SECONDS = 2;
-	private static final String PRE = "zk-client-";
 
 	public static CuratorFramework getClient(String hostPort,String nameSpace) {
 		HttpSession session = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest().getSession();
-		String key = PRE + hostPort;
+		String key = hostPort;
 		CuratorFramework client = null;
 		Object obj = session.getAttribute(key);
 		if(obj == null) {
