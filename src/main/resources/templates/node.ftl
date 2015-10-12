@@ -88,6 +88,12 @@
 					</table>
 				</div>
 				<div class="col-md-4 column">
+					<h3>节点数据<span class="label label-info fontsize11">${dataSize} byte(s)</span></h3>
+					<div class="well marginright50">
+						<p style="word-break:break-all;">${data?replace("\n", "<br/>")}</p>
+					</div>
+				</div>
+				<d class="col-md-4 column">
 					<h3>节点状态</h3>
 					<table class="table table-bordered">
 						<#if stat??>
@@ -99,12 +105,6 @@
 						</#list>
 						</#if>
 					</table>
-				</div>
-				<div class="col-md-4 column">
-					<h3>节点数据<span class="label label-info fontsize11">${dataSize} byte(s)</span></h3>
-					<div class="well marginright50">
-						<p style="word-break:break-all;">${data?replace("\n", "<br/>")}</p>
-					</div>
 				</div>
 			</div>
 			

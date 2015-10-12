@@ -26,7 +26,10 @@ h1 {
   color:#efefef;
   text-decoration:none;
 }
-
+.span12 {
+	text-align: left;
+	font-size:18px;
+}
 .container-full1 {
   margin: 0 auto;
   width: 100%;
@@ -61,6 +64,7 @@ h1 {
   background-image: url("../img/glyphicons-halflings.png");
   background-position: 14px 14px;
   background-repeat: no-repeat;
+  margin-top: 4px;
 }
 
 .icon-chevron-right {
