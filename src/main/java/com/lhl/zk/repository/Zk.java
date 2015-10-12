@@ -47,13 +47,13 @@ public class Zk {
 
    public void delete(String path) throws Exception {
       path = getPath(path);
-      getClient().delete().forPath(path);
+      getClient().delete().deletingChildrenIfNeeded().forPath(path);
       LOGGER.info("delete: node:{}", path);
    }
 
    public void deleteRecursive(String path) throws Exception {
       path = getPath(path);
-      delete(path);
+      getClient().delete().deletingChildrenIfNeeded().forPath(path);
       LOGGER.info("rmr: node:{}", path);
    }
 
