@@ -20,7 +20,6 @@ public class StartUp extends WebMvcConfigurerAdapter{
 	
 	/**
      * 配置拦截器
-     * @author lance
      * @param registry
      */
     public void addInterceptors(InterceptorRegistry registry) {
