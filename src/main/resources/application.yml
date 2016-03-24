@@ -1,7 +1,7 @@
 server:
   port: 8010
 #  address: 127.0.0.1
-  sessionTimeout: 30
+  session-timeout: 3600
   context-path: /zkConsole
 #security:
 #  user:
